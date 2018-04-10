@@ -83,7 +83,7 @@ At the live assessment you also need to explain:
 ## 6. Evaluate tools and systems
 Evaluate what tools and systems will be used to build, host, operate and measure the service, and how to procure them.
 
-### In the alpha assessment
+### Alpha
 To pass point 6 in the alpha assessment, you usually need to describe:
 
 - the languages, frameworks and other technical choices you’ve made in alpha, and how this will affect the decisions you make in beta
@@ -92,6 +92,7 @@ To pass point 6 in the alpha assessment, you usually need to describe:
 - the set of programming tools you’d like to choose for beta and why
     - price / open source
     - popularity
+    - accessibility
     - performance / security
     - learning curve
     - shininess
@@ -102,7 +103,8 @@ To pass point 6 in the alpha assessment, you usually need to describe:
     - Pingdom / Datadog
     - AWS CloudWatch / Azure Monitor
 
-### In the beta assessment
+
+### Beta
 To pass point 6 in the beta assessment you usually need to explain:
 
 - how you’re managing the limits placed on your service by the technology stack and development toolchain you’ve chosen
@@ -111,7 +113,7 @@ demonstrate how you’ll monitor the status of your service
 - the support arrangements you have in place, in normal hours and out of hours
 - any decisions you’ve outsourced to third parties and why you chose to do this
 
-### In the live assessment
+### Live
 To pass point 6 in the live assessment, you usually need to:
 
 - describe the tech stack changes you made during beta and why
@@ -132,7 +134,7 @@ To pass point 6 in the live assessment, you usually need to:
 ## 7. Understand security and privacy issues
 Evaluate what user data and information the digital service will be providing or storing and address the security level, legal responsibilities, privacy issues and risks associated with the service (consulting with experts where appropriate).
 
-### Alpha assessment
+### Alpha
 To pass the alpha assessment for point 7 you usually need to explain:
   
 - how you’ve identified threats to your service, including potential pathways for hackers, and tested ways of reducing them
@@ -147,24 +149,17 @@ To pass the alpha assessment for point 7 you usually need to explain:
     - have dashboards in your office
 - any threats of fraud (fraud vectors) which exist and the controls you’re prototyping
 
-### Beta assessment
-To pass the beta assessment for point 7 you usually need to:
+### Beta and Live
+To pass the beta and live assessments for point 7 you usually need to:
   
 - describe your team’s approach to security and risk management
 - describe the security and privacy threats to your service
 - explain the fraud vectors that exist and the controls you’re putting in place
 - describe how you’ve worked with the business and information risk teams eg senior information risk owner (SIRO), information asset owner (IAO) and data guardians, and how you’re working to meet any security regulations without putting delivery at risk
 - describe any outstanding legal concerns, eg how you’ll protect data or your policy on sharing it 
+- explain how you’re keeping your understanding of the threats to your service up to date
 - present your cookie and privacy policy and explain how you arrived at it
 
-### Live assessment
-To pass the live assessment for point 7 you usually need to:
-  
-- describe your team’s approach to security and risk management
-- describe your ongoing interactions with the business and information risk teams, eg SIRO, IAO and data guardians
-- describe any outstanding legal concerns, eg data protection or data sharing
-- explain how you’re keeping your understanding of the threats to your service up to date, and explain how the threats have changed during beta
-- explain how you’re keeping your cookie policy and privacy policy up to date
    
 ### Example questions
 - describe how you have secured your service (e.g. authentication (how)), Virus Scanning, TLS, WAF, firewalls etc.)
@@ -183,13 +178,13 @@ To pass the live assessment for point 7 you usually need to:
 ## 8. Make all new source code open
 Make all new source code open and reusable, and publish it under appropriate licences (or provide a convincing explanation as to why this can't be done for specific subsets of the source code).
 
-### In the alpha assessment
+### Alpha
 To pass, you usually need to:
 
 - explain how you plan to make all new source code open and reusable
 - confirm that you own the intellectual property
 
-### In the beta and live assessments
+### Beta and Live
 To pass, you also need to:
 
 - show your code in an open internet source code repository
@@ -207,7 +202,7 @@ To pass, you also need to:
 ## 9. Use open standards and common platforms
 Use open standards and common government platforms where available, including GOV.UK Verify as an option for identity assurance.
 
-### In the alpha assessment
+### Alpha
 To pass your alpha assessment, you usually need to explain how you:
 
 - understand how open standards and common platforms could avoid you getting locked into contracts
@@ -217,7 +212,7 @@ To pass your alpha assessment, you usually need to explain how you:
 - investigate use common platforms for your system, such as GOV.UK Verify, Defra Identity or HMRC Governemnt Gateway as an option for identity assurance
 - identify the common user needs your service meets and what you reuse from across government to help meet those user needs
 
-### In the beta and live assessment
+### Beta and Live
 To pass your beta or live assessment, you also usually need to explain how you:
 
 - use open standards and common platforms 
@@ -255,11 +250,11 @@ To pass the alpha, beta and live assessments, you usually need to show that you:
 
 Make a plan for the event of the digital service being taken temporarily offline.
 
-### Alpha assessment
+### Alpha
 To pass the alpha assessment you need to be able to explain
 - how users would be affected if your service was unavailable for any length of time.
 
-### Beta and live assessment
+### Beta and Live
 To pass you usually need to also explain:
 
 - how you’re making sure the technology and platforms you’ve selected  meet your availability requirements
@@ -279,3 +274,39 @@ To pass you usually need to also explain:
 - what things are most likely to take you offline and what mitigations you are considering?
 - what is your strategy for dealing with an incident and who is responsible for doing this?
 - how did you evaluate what support arrangements are needed, and what arrangements have you got in place? Is this aligned with the department's solution for support?
+
+## 13. Make the user experience consistent with GOV.UK
+Build a service consistent with the user experience of the rest of GOV.UK including using the design patterns and style guide.
+
+Note that by default server-side-rendering (SSR) and possibly progressive enhancement are expected - https://www.gov.uk/service-manual/technology/using-progressive-enhancement
+
+### Alpha
+To pass your alpha, beta, and live assessments you usually need to:
+- explain how your team has included designers, content designers and frontend developers
+- show you’ve got a start and end page on GOV.UK and that both are optimised for users
+- explain how the service has used the GOV.UK design patterns, frontend toolkit and elements
+    - Grid layout
+    - Colours
+    - Typography (New Transport font stack)
+    - Buttons, Selection Buttons
+    - Phase banner
+    - Design patterns include date, check your answers, 
+
+### Beta and Live
+To pass the beta and live assessments you also need to show:
+
+- the service is responsive and works on mobile devices
+- the headers and footers match the GOV.UK style
+
+
+## Accessibility note
+You must build an accessible service as part of meeting these points:
+
+- point 1 (understand user needs)
+- point 2 (do ongoing user research)
+- point 12 (make sure users succeed first time)
+
+From alpha you need to undertand how what you have built conforms to:
+- WCAG design principles - https://www.gov.uk/service-manual/helping-people-to-use-your-service/understanding-wcag-20
+- Whether the service meets an accessibility checklist - https://accessibility.18f.gov/checklist/      
+- automated accessibility testing to ensure the service meets level AA of the Web Content Accessibility Guidelines 2.0 (WCAG 2.0) and works on the most commonly used assistive technologies like screen readers and speech recognition tools
