@@ -209,8 +209,15 @@ To pass your alpha assessment, you usually need to explain how you:
     - open standards for the web (HTTP, REST)
     - open standards for data exchange (XML, JSON)
     - open standards for documents
-- investigate use common platforms for your system, such as GOV.UK Verify, Defra Identity or HMRC Governemnt Gateway as an option for identity assurance
+- investigate use common platforms for your system, such as GOV.UK Verify, Defra Identity or HMRC Government Gateway as an option for identity assurance
 - identify the common user needs your service meets and what you reuse from across government to help meet those user needs
+
+Look at https://www.gov.uk/government/publications/open-standards-for-government for a list of open standards. It includes:
+    - ISO 8601 for dates and times
+    - ISO 3166-1:2013 for country codes
+    - Persistent resolvable identifiers using HTTP 1.1 and URL.
+    - Documents should be shared in ODF version 1.2 (or later)
+    - Viewable information should use HTML5 (either the HTML or XML formulation) must be used for all new services that produce documents for viewing online through a browser
 
 ### Beta and Live
 To pass your beta or live assessment, you also usually need to explain how you:
@@ -245,12 +252,6 @@ To pass the alpha, beta and live assessments, you usually need to show that you:
 - are testing your service frequently - you’ll have to explain how you’ve decided how often to test
     - differentiate between automated testing and manual QA, exploratory testing, accessibility testing, pen testing, sanity testing
     
-    https://www.gov.uk/government/publications/open-standards-for-government for list of open standards includes:
-    - ISO 8601 for dates and times
-    - ISO 3166-1:2013 for country codes
-    - Persistent resolvable identifiers using HTTP 1.1 and URL.
-    - Documents should be shared in ODF version 1.2 (or later)
-    - Viewable information should use HTML5 (either the HTML or XML formulation) must be used for all new services that produce documents for viewing online through a browser
 
 ### Example questions
 - what environments do you have?
