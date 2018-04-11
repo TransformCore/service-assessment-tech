@@ -99,7 +99,7 @@ To pass point 6 in the alpha assessment, you usually need to describe:
     - what other competing tools were considered and why were they ruled out?
 - how you’ll get value for money when buying any tools
 - how you’ll monitor the status of your service
-    - health checks and automatic redeployments
+    - health checks and automatic re-deployments
     - Pingdom / Datadog
     - AWS CloudWatch / Azure Monitor
 
@@ -230,19 +230,26 @@ Be able to test the end-to-end service in an environment identical to that of th
 To pass the alpha, beta and live assessments, you usually need to show that you:
 
 - have an effective deployment environment
+    - deployment pipeline
 - can create new environments quickly and easily
+    - using infrastructure as code
 - know the data that exists in your pre-production environments
+    - automated process for creating this data either from scratch or derived from live with appropriate codification
 - are designing and testing your service to work with the devices and - browsers your users use - find out the browsers you must test with
 - are testing your service in an environment that’s as similar to live as possible
+    - see https://www.gov.uk/service-manual/technology/designing-for-different-browsers-and-devices
 - know that your service can keep working when the number of expected users try to use it, including for users who need assisted digital support
+    - performance testing (including realistic, longer running tests)
+    - what is the offline / assisted digital model?
 - understand the systems you need and the testing environments for non-digital parts of the service
 - are testing your service frequently - you’ll have to explain how you’ve decided how often to test
+    - differentiate between automated testing and manual QA, exploratory testing, accessibility testing, pen testing, sanity testing
 
 ### Example questions
 - what environments do you have?
 - how quickly can you spin a new environment up and who can do this?
 - how do these environments differ to production?
-- how do you get a representitive sample of data on preproduction environments? Do you scrub production data?
+- how do you get a representative sample of data on pre-production environments? Do you scrub production data?
 - how do you identify what browsers / devices you should test against? what automated device testing do you use? is there any manual testing?
 - what performance testing have you done in what environments? is it part of CI?
 
