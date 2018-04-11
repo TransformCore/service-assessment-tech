@@ -244,6 +244,13 @@ To pass the alpha, beta and live assessments, you usually need to show that you:
 - understand the systems you need and the testing environments for non-digital parts of the service
 - are testing your service frequently - you’ll have to explain how you’ve decided how often to test
     - differentiate between automated testing and manual QA, exploratory testing, accessibility testing, pen testing, sanity testing
+    
+    https://www.gov.uk/government/publications/open-standards-for-government for list of open standards includes:
+    - ISO 8601 for dates and times
+    - ISO 3166-1:2013 for country codes
+    - Persistent resolvable identifiers using HTTP 1.1 and URL.
+    - Documents should be shared in ODF version 1.2 (or later)
+    - Viewable information should use HTML5 (either the HTML or XML formulation) must be used for all new services that produce documents for viewing online through a browser
 
 ### Example questions
 - what environments do you have?
